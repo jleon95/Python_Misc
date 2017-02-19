@@ -6,7 +6,7 @@ class Whisper:
 
 	def toWhom(self,usernames,typed):
 
-		if "/msg " not in typed[:5].lower():
+		if not typed.startswith("/msg "):
 
 			return "not a whisper"
 
